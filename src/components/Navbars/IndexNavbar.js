@@ -53,13 +53,12 @@ function IndexNavbar() {
       <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand
+            <NavLink
               href="/"
-              target="_blank"
               id="navbar-brand"
             >
               Padaria Consider
-            </NavbarBrand>
+            </NavLink>
             <UncontrolledTooltip target="#navbar-brand">
               Venha nos conhecer
             </UncontrolledTooltip>
@@ -92,47 +91,11 @@ function IndexNavbar() {
                   <p>Encomendas</p>
                 </NavLink>
               </NavItem>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  href="#pablo"
-                  nav
-                  onClick={e => e.preventDefault()}
-                >
-                  <i className="now-ui-icons design_app mr-1"></i>
-                  <p>Conta</p>
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem to="/login-page" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    Fazer login
-                  </DropdownItem>
-                  <DropdownItem
-                    href="/profile-page"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
-                    Ver perfil
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              
 
               <NavItem>
                 <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="twitter-tooltip"
-                >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
-                </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                 Siga-nos no twitter.
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                  href="https://www.facebook.com/Padaria-Consider-258268198196978/?ref=page_internal"
                   target="_blank"
                   id="facebook-tooltip"
                 >
@@ -145,7 +108,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href="https://www.instagram.com/padaria_consider/"
                   target="_blank"
                   id="instagram-tooltip"
                 >
