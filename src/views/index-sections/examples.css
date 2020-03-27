@@ -1,4 +1,9 @@
 .bolo img{
 	width: 22em;
 	height: 18em;
+  max-width: 280px;
+}
+
+.section-examples{
+background-color: #29254e;
 }
