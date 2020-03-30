@@ -1,4 +1,6 @@
 import React from "react";
+import { Link, useHistory } from 'react-router-dom';
+
 // reactstrap components
 import {
 
@@ -77,12 +79,9 @@ function IndexNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink
-                  href="/encomenda"
-          
-                >
+                <NavLink>
                   <i className="now-ui-icons arrows-1_cloud-download-93"></i>
-                  <p>Encomendas</p>
+                  <Link className="button d-lg-none d-xl-none" to="/encomenda">Encomendas</Link>
                 </NavLink>
               </NavItem>
               
