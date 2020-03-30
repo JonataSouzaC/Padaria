@@ -1,6 +1,7 @@
 import React from "react";
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
+import { Link, useHistory } from 'react-router-dom';
 
 // core components
 
@@ -15,15 +16,7 @@ function NucleoIcons() {
               <h5 className="description">
                 Faça uma encomenda de bolo de aniversário diretamente em nossa página.
               </h5>
-              <Button
-                className="btn-round mr-1"
-                color="info"
-                href="/Encomenda"
-                size="lg"
-                target="_blank"
-              >
-                Fazer encomenda
-              </Button>
+              <Link className="btn-round mr-1 btn btn-info btn-lg" to="/encomenda">Encomendas</Link>
 
             </Col>
             <Col lg="6" md="12">
