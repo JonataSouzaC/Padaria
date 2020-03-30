@@ -49,6 +49,7 @@ function IndexNavbar() {
       <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
         <Container>
           <div className="navbar-translate">
+
             <NavLink
               href="/"
               id="navbar-brand"
@@ -58,6 +59,8 @@ function IndexNavbar() {
             <UncontrolledTooltip target="#navbar-brand">
               Venha nos conhecer
             </UncontrolledTooltip>
+
+            
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -71,21 +74,25 @@ function IndexNavbar() {
               <span className="navbar-toggler-bar middle-bar"></span>
               <span className="navbar-toggler-bar bottom-bar"></span>
             </button>
+
           </div>
+
+                 
+     
+
           <Collapse
             className="justify-content-end"
             isOpen={collapseOpen}
             navbar
           >
-            <Nav navbar>
-              <NavItem>
-                <NavLink>
-                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
-                  <Link className="button d-lg-none d-xl-none" to="/encomenda">Encomendas</Link>
-                </NavLink>
-              </NavItem>
-              
 
+            <Nav navbar>
+               <NavLink>
+
+                  
+                  <i className="now-ui-icons arrows-1_cloud-download-93"></i><Link to="/encomenda" > Encomendas</Link>
+             
+                </NavLink>
               <NavItem>
                 <NavLink
                   href="https://www.facebook.com/Padaria-Consider-258268198196978/?ref=page_internal"
